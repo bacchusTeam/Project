@@ -81,8 +81,12 @@ local.properties
 .scala_dependencies
 .worksheet
 
+# idea
 .idea/
+
+# gradle
 .gradle/
 
+# build
 build/
 out/
