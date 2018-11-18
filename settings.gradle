@@ -1,2 +1,3 @@
 rootProject.name = "morningcare"
 include 'sping-boot-sample-web-secure'
+include 'sping-boot-sample-flyway'
