@@ -1,0 +1,36 @@
+subprojects {
+    buildscript {
+        repositories {
+            jcenter()
+        }
+        dependencies {
+            classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.5.RELEASE")
+        }
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
+    apply plugin: 'java-gradle-plugin'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    /*eclipse {
+        classpath {
+            downloadJavadoc = true
+            downloadSources = true
+        }
+    }
+
+    idea {
+        module {
+            downloadJavadoc = true
+            downloadSources = true
+        }
+    }*/
+
+    repositories {
+        jcenter()
+    }
+}
