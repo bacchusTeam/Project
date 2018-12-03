@@ -16,7 +16,8 @@ off 스터디 2일차
 - spring boot mvc
 - application.yml
 
-## LogBack
+## LogBack with lombok
 
 - console
 - file
+- lombok
