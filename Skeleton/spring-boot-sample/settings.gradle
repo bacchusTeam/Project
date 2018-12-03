@@ -1,1 +1,4 @@
 rootProject.name = "spring-boot-sample"
+
+include ("spring-boot-sample-simple")
+include ("spring-boot-sample-web-ui")

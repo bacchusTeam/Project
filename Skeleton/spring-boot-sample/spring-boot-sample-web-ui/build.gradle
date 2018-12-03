@@ -1,47 +1,17 @@
-buildscript {
-    ext {
-        springBootVersion = '2.1.0.RELEASE'
-    }
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-    }
-}
-
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
+apply plugin: "java"
+apply plugin: "eclipse"
+apply plugin: "idea"
+apply plugin: "java-gradle-plugin"
+apply plugin: "org.springframework.boot"
+apply plugin: "io.spring.dependency-management"
 
 group = 'com.zzizily.skeleton.spring.boot'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
-
-repositories {
-    jcenter()
-}
-
-
-ext {
-    springBootAdminVersion = '2.1.1'
-}
 
 dependencies {
-    implementation('org.springframework.boot:spring-boot-starter-web')
-    // implementation('org.springframework.boot:spring-boot-starter-actuator')
-    // implementation('de.codecentric:spring-boot-admin-starter-client')
-    implementation('org.springframework.boot:spring-boot-starter-thymeleaf')
-    
-    runtimeOnly('org.springframework.boot:spring-boot-devtools')
-    // compileOnly('org.projectlombok:lombok')
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+  implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+  runtimeOnly 'org.springframework.boot:spring-boot-devtools'
 
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
-}
-
-dependencyManagement {
-    imports {
-        mavenBom "de.codecentric:spring-boot-admin-dependencies:${springBootAdminVersion}"
-    }
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

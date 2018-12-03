@@ -4,17 +4,10 @@ subprojects {
             jcenter()
         }
         dependencies {
-            classpath("org.springframework.boot:spring-boot-gradle-plugin:${spring.boot}")
+            classpath("org.springframework.boot:spring-boot-gradle-plugin:${pluginSpringBootGradle}")
+            classpath("io.spring.gradle:dependency-management-plugin:${pluginDependencyManagement}")
         }
     }
-
-    apply plugin: 'java'
-    apply plugin: 'eclipse'
-    apply plugin: 'idea'
-    apply plugin: 'java-gradle-plugin'
-
-    sourceCompatibility = 1.8
-    targetCompatibility = 1.8
 
     /*eclipse {
         classpath {
