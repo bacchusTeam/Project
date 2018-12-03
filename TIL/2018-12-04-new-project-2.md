@@ -9,14 +9,14 @@ tag: Spring, Boot, Logback, Application.yml
 
 off 스터디 2일차
 
-## Spring Boot MVC with Application.yml
+## 1. Spring Boot MVC with Application.yml
 
 - spring boot
 - spring boot web
 - spring boot mvc
 - application.yml
 
-## LogBack with lombok
+## 2. LogBack with lombok
 
 - console
 - file

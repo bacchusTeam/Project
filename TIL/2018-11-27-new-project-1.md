@@ -17,11 +17,11 @@ git submodule 이용한 다중 repo 프로젝트 1개만 이용한 mono repo 프
 프로젝트간에 독립성이 어느 정도 보장되는것이 핵심이면 multi 가 좋을거 같고  
 규모가 좀 작으며서 쉽게 시작 하기는 mono 가 좋을거 같음 그래서 mono 로 ㄱㄳ
 
-## Gradle Multi Module with Eclipse
+## 1. Gradle Multi Module with Eclipse
 
 Gradle 이용한 Multi Module 설정하기
 [예제](https://github.com/deuxksy/java-skeleton/tree/master/spring-boot-multi-module)
 
-## Gradle 5 가 나와서 다시 공부 하면서 다시
+## 2. Gradle 5 가 나와서 다시 공부 하면서 다시
 
 [예제](https://github.com/deuxksy/TIL/tree/master/Gradle/gradle-multi-project)
