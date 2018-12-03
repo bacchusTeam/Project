@@ -1,0 +1,4 @@
+sample\simple\SampleSimpleApplication.class
+sample\simple\service\HelloWorldService.class
+sample\simple\SampleConfigurationProperties.class
+sample\simple\ExitException.class
