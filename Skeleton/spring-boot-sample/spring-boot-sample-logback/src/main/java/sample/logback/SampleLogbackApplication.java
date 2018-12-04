@@ -18,6 +18,7 @@ package sample.logback;
 
 import javax.annotation.PostConstruct;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,19 +26,23 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@Slf4j
 public class SampleLogbackApplication {
 
-	private static final Logger logger = LoggerFactory
-			.getLogger(SampleLogbackApplication.class);
+  //  lombok 사용에 따른 주석 처리
+  private static final Logger logger = LoggerFactory.getLogger(SampleLogbackApplication.class);
 
-	@PostConstruct
-	public void logSomething() {
-		logger.debug("Sample Debug Message");
-		logger.trace("Sample Trace Message");
-	}
+  @PostConstruct
+  public void logSomething() {
+//  lombok 사용에 따른 주석 처리
+    logger.debug("Sample Debug Message");
+    logger.trace("Sample Trace Message");
+    log.debug("Sample Debug Message");
+    log.trace("Sample Trace Message");
+  }
 
-	public static void main(String[] args) {
-		SpringApplication.run(SampleLogbackApplication.class, args).close();
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(SampleLogbackApplication.class, args).close();
+  }
 
 }
