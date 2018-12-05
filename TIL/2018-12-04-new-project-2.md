@@ -14,7 +14,7 @@ off 스터디 2일차
 - spring boot
 - spring boot web
 - spring boot mvc
-- application.yml
+- [application.yml](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html)
 
 ## 2. LogBack with lombok
 
