@@ -44,6 +44,9 @@ private String name;
 
 @Value("${ksy.friend}")
 private String[] friend;
+
+@Autowired
+AvailableChannelsConfiguration availableChannelsConfiguration;
 ```
 
 ```yml
@@ -52,6 +55,12 @@ hello: 어서와
 ksy:
   name: 김석영
   friend: 김욱진,양주환
+
+availableChannelsConfiguration:
+ ...
+ ...
+ ...
+
 ```
 
 - 단순 출력
