@@ -10,5 +10,6 @@ version = '0.0.1-SNAPSHOT'
 dependencies {
   implementation('org.springframework.boot:spring-boot-starter-web')
   implementation('javax.servlet:jstl')
+  providedRuntime('org.apache.tomcat.embed:tomcat-embed-jasper')
   testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
