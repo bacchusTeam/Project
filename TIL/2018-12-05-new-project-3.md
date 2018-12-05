@@ -33,6 +33,27 @@ static index.hthml 이용한 접속 및 mvc 이용한 greeting.html 접속
 
 ### 2.1 [so-yaml](https://github.com/konrad-garus/so-yaml)
 
+예제로 해보자
+
+```java
+@Value("${hello}")
+private String hello;
+
+@Value("${ksy.name}")
+private String name;
+
+@Value("${ksy.friend}")
+private String[] friend;
+```
+
+```yml
+hello: 어서와
+
+ksy:
+  name: 김석영
+  friend: 김욱진,양주환
+```
+
 - 단순 출력
 - List 형태 출력
-- Map 형태 출력
+- @Configuration 형태 출력
