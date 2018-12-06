@@ -11,7 +11,15 @@ off 스터디 3일차
 
 ## 1. Spring Boot Web
 
-### 1.1 [간단한 rest api 구축](https://github.com/spring-guides/gs-rest-service/blob/master/complete/build.gradle)
+[Spring Guides](https://github.com/spring-guides) 예제 들은 프로젝트 만들기 조금 애매한  
+간다한 팁 이라면 clone 하고 root 폴더에 settings.gradle 파일을 만들고 eclipse 에서 gradle 프로젝트로 읽기
+```groovy
+rootProject.name=gs-rest-service
+include ('complete')
+include ('initial')
+```
+
+### 1.1 [간단한 rest api 구축](https://github.com/spring-guides/gs-rest-service)
 
 reset api 만들어 보자
 
