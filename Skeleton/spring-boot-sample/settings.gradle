@@ -1,9 +1,0 @@
-rootProject.name = "spring-boot-sample"
-
-include ("spring-boot-sample-simple")
-include ("spring-boot-sample-logback")
-include ("spring-boot-sample-tomcat")
-include ("spring-boot-sample-web-jsp")
-include ("spring-boot-sample-web-ui")
-include ("spring-boot-sample-web-secure")
-include ("spring-boot-sample-flyway")
